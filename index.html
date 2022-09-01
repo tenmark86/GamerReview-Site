@@ -1,60 +1,39 @@
+
 <!DOCTYPE html>
 <html>
   <head>
-    <title>GamerReview </title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>GamerReview-Site</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./dist/bundle.css" />
   </head>
 
   <body>
     <div class="container">
-      <div class="row  mt-5 mb-4">
-        <div class="col-lg-8 col-md-8 col-sm-12 mb-4">
-          <h1 id="title"><a href="#">GamerReview</a></h1>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-12">
-          <div class="searchbar">
-            <i class="fa-solid fa-magnifying-glass" id="searchbtn"></i>
-            <input type="search" placeholder="Find a game..." id="searchinput">
-          </div>
-          
-        </div>
+      <header>
+        <a class="link-header" href="#pagelist"><h1>GamerReview-Site</h1></a>
+        <div id="game">
+          <input class="input-search" type="text" class="form-control-lg input-search" placeholder="Name">
+          <button id="button" class="btn btn-secondary btn-sm" type="submit" onclick="findGame()">search</button>
       </div>
-  
-      <section id="présentation">
-        <h2 class="mb-3">Welcome,</h2>
-        <p>Where Gamers See Upcoming, Review newly released games of their favourite platforms </p>
-      </section>
-  
-      <section class="plateform mt-4 mb-3" id="platformdiv">
-        <p class="platformname">Platform: </p>
-        <select name="platform" id="platformselect">
-          <option value="0">any</option>
-          <option value="1">PC</option>
-          <option value="2">Playstation</option>
-          <option value="3">Xbox</option>
-          <option value="4">IOS</option>
-          <option value="5">Mac</option>
-          <option value="6">Linux</option>
-          <option value="7">Switch</option>
-          <option value="8">Android</option>
-        </select>
-      </section>
-      
-      <section id="whereyouare">
-        <h2 id="contenttitle"></h2>
-      </section>
+      </header>
+    <label for="findgame">
+    </label><br>
+  <div> 
 
-      <section id="pageContent" class="mt-4"></section>
+  </div>
+  <div id="buttons">
+    <button type="button" class="btn btn-primary" id="ps">Playstation 5 </button>
+    <button type="button" class="btn btn-secondary" id="xbox">Xbox S</button>
+    <button type="button" class="btn btn-danger" id="switch">Switch</button>
+  </div>
 
-      <section id="footer" class="my-5">
-        <div class="red mb-2"></div>
-        <p style="font-size: 13px">Cuban @2022 - GamerReview</p>
-      </section>
-  
-    </div>
+    <section id="pageContent">Choose a link</section>
+
+    <footer>GameReview copyright: 2022 Data API source site:<a href="https://rawg.io">RAWG site</a></footer>
+  </div>
     <script src="./dist/bundle.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
