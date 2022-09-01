@@ -1,96 +1,39 @@
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gaming-site</title>
-    <!-- font awesome cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- normalize css -->
-    <link rel = "stylesheet" href = "css/normalize.css">
-    <!-- custom css -->
-    <link rel = "stylesheet" href = "css/main.css">
-</head>
-<body>
+<html>
+  <head>
+    <title>GamerReview-Site</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./dist/bundle.css" />
+  </head>
 
-    <!-- navbar -->
-    <nav class = "navbar">
-        <div class = "container flex">
-            <a href = "#" class = "navbar-brand">Gaming-site<span></span></a>
+  <body>
+    <div class="container">
+      <header>
+        <a class="link-header" href="#pagelist"><h1>GamerReview-Site</h1></a>
+        <div id="game">
+          <input class="input-search" type="text" class="form-control-lg input-search" placeholder="Name">
+          <button id="button" class="btn btn-secondary btn-sm" type="submit" onclick="findGame()">search</button>
+      </div>
+      </header>
+    <label for="findgame">
+    </label><br>
+  <div> 
 
-            <div class = "navbar-collapse">
-                <button type = "button" class = "navbar-toggler-close">
-                    <i class = "fas fa-times"></i>
-                </button>
-                <ul class = "navbar-nav">
-                    <li class = "nav-item">
-                        <a href = "#" class = "nav-link">home</a>
-                    </li>
-                    <li class = "nav-item">
-                        <a href = "#" class = "nav-link">games</a>
-                        <span class = "nav-item-dropdown">
-                            <i class = "fas fa-chevron-down"></i>
-                        </span>
-                        <ul class = "nav-item-dropdown-content">
-                            <li><a href = "#">PS5</a></li>
-                            <li><a href = "#">PS4</a></li>
-                            <li><a href = "#">Xbox</a></li>
-                            <li><a href = "#">PUBG</a></li>
-                        </ul>
-                    </li>
-                    <li class = "nav-item">
-                        <a href = "#" class = "nav-link">news</a>
-                        <span class = "nav-item-dropdown">
-                            <i class = "fas fa-chevron-down"></i>
-                        </span>
-                        <ul class = "nav-item-dropdown-content">
-                            <li><a href = "#">Latest</a></li>
-                            <li><a href = "#">Popular</a></li>
-                            <li><a href = "#">Archive</a></li>
-                        </ul>
-                    </li>
-                    <li class = "nav-item">
-                        <a href = "#" class = "nav-link">Reviews</a>
-                        <span class = "nav-item-dropdown">
-                            <i class = "fas fa-chevron-down"></i>
-                        </span>
-                        <ul class = "nav-item-dropdown-content">
-                            <li><a href = "#">Entertainment</a></li>
-                            <li><a href = "#">Games</a></li>
-                        </ul>
-                    </li>
-                    <li class = "nav-item">
-                        <a href = "#" class = "nav-link">videos</a>
-                    </li>
-                    <li class = "nav-item">
-                        <a href = "#" class = "nav-link">gear</a>
-                        <span class = "nav-item-dropdown">
-                            <i class = "fas fa-chevron-down"></i>
-                        </span>
-                        <ul class = "nav-item-dropdown-content">
-                            <li><a href = "#">Gaming PC</a></li>
-                            <li><a href = "#">Gaming Chair</a></li>
-                            <li><a href = "#">Gaming Desk</a></li>
-                            <li><a href = "#">Gaming Accessories</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+  </div>
+  <div id="buttons">
+    <button type="button" class="btn btn-primary" id="ps">Playstation 5 </button>
+    <button type="button" class="btn btn-secondary" id="xbox">Xbox S</button>
+    <button type="button" class="btn btn-danger" id="switch">Switch</button>
+  </div>
 
-            <div class = "nav-icons-group">
-                <form class = "search-form">
-                    <div class = "search-icon-group">
-                        <input type = "search" class = "search-control">
-                        <button type = "submit" class = "search-icon">
-                            <i class = "fas fa-search"></i>
-                        </button>
-                    </div>
-                </form>
-                <button type = "button" class = "navbar-toggler-open">
-                    <i class = "fas fa-bars"></i>
-                </button>
-            </div>
-        </div>
-    </nav>
-    <!-- end of navbar -->
+    <section id="pageContent">Choose a link</section>
+
+    <footer>GameReview copyright: 2022 Data API source site:<a href="https://rawg.io">RAWG site</a></footer>
+  </div>
+    <script src="./dist/bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
